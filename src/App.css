@@ -1,38 +1,301 @@
 .App {
-  text-align: center;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link:hover {
+    border-bottom: 5px solid aquamarine;
+    transition: all ease 0.15s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-cyan {
+    color: aquamarine;
+    filter: brightness(0.90);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.butn {
+    border: 2px solid aquamarine;
+    border-radius: 50px;
+    width: 50%;
+    transition: all ease 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.butn:hover {
+    background-color: aquamarine;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.arrow {
+    rotate: -45deg;
+}
+
+.dummy-image-l,
+.dummy-image-r,
+.dummy-image-bl,
+.dummy-image-br {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    padding: 7px 7px 0 0;
+}
+
+.left-img,
+.right-img,
+.b-right-img,
+.b-left-img {
+    width: fit-content;
+    border-radius: 50%;
+}
+
+.left-img {
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    border-top: 3px solid aquamarine;
+    rotate: -45deg;
+}
+
+.right-img {
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    border-top: 3px solid aquamarine;
+    rotate: 45deg;
+}
+
+.b-left-img {
+    position: absolute;
+    bottom: 5vh;
+    left: 5vh;
+    border-top: 3px solid aquamarine;
+    rotate: 225deg;
+}
+
+.b-right-img {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vh;
+    border-top: 3px solid aquamarine;
+    rotate: -225deg;
+}
+
+.dummy-image-l {
+    rotate: 45deg;
+}
+
+.dummy-image-r {
+    rotate: -45deg;
+}
+
+.dummy-image-bl {
+    rotate: -225deg;
+}
+
+.dummy-image-br {
+    rotate: 225deg;
+}
+
+.text-page {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.image-container {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.b-center-img {
+    width: fit-content;
+    border-radius: 50%;
+    padding: 5vh;
+    border-top: 3px solid aquamarine;
+    border-right: 3px solid aquamarine;
+    rotate: -45deg;
+}
+
+.cb-center-img {
+    border-bottom: 3px solid aquamarine;
+    border-right: 3px solid aquamarine;
+    rotate: 90deg;
+    padding: 3vh;
+    border-radius: 50%;
+}
+
+.dummy-image {
+    rotate: -45deg;
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+}
+
+.play-butn {
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: zoom-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    rotate: 45deg;
+}
+
+@keyframes zoom-in-out {
+    0% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+
+}
+
+.service-heading {
+    color: rgb(0, 0, 215);
+    font-weight: bold;
+}
+
+.service-card {
+    width: 300px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid aquamarine;
+    border-top: 1px solid aquamarine;
+    border-right: 10px solid aquamarine;
+    padding: 25px 40px;
+    border-radius: 15%;
+    transition: all ease 0.3s;
+    transform-style: preserve-3d;
+}
+
+.main-card {
+    display: flex;
+    justify-content: space-around;
+    transition: all ease 0.3s;
+    transform-style: preserve-3d;
+}
+
+.service-card {
+    &:hover {
+        border-right: 1px solid white;
+        border-bottom: 1px solid blue;
+        border-top: 1px solid blue;
+        border-left: 10px solid blue;
+
+        /*  */
+        .service-heading {
+            color: aquamarine;
+            transition: 0.5s;
+            transform: scale(0.8);
+
+        }
+
+        .card-imgs {
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+
+        .service-para {
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.empty-span {
+    padding: 0 2px;
+    background-image: linear-gradient(to bottom, aquamarine,
+            blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .dummy-image-l,
+    .dummy-image-r,
+    .dummy-image-bl,
+    .dummy-image-br {
+        height: 15vh;
+        width: 15vh;
+        border-radius: 50%;
+        padding: 7px 7px 0 0;
+    }
+
+    .dummy-image {
+        rotate: -45deg;
+        border-radius: 50%;
+        height: 30vh;
+        width: 30vh;
+    }
+    .right-img ,.left-img{
+        top: 6vh;
+    }
+    .b-right-img ,.b-left-img{
+        bottom: 6vh;
+    }
+    .right-img ,.b-right-img{
+        right: 0.5vh;
+    }
+    .left-img ,.b-left-img{
+        left: 0.5vh;
+    }
+    .b-right-img ,.b-left-img{
+        bottom: 6vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .dummy-image {
+        rotate: -45deg;
+        border-radius: 50%;
+        height: 20vh;
+        width: 20vh;
+    }
+}
+
+.arrow-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.text-arrow{
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    rotate: -45deg;
+    transition: 0.5s;
+}
+.hidden-text{
+    opacity: 0;
+    transition: all ease 0.1s;
+}
+.arrow-box{
+    
+    &:hover{
+        color: black;
+        .text-arrow{
+                background-color: aquamarine;
+
+            }
+        .hidden-text {
+            opacity: 1;
+        }
+    }
+}
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
