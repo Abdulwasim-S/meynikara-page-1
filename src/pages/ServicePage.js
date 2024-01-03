@@ -73,7 +73,7 @@ const ServicePage = () => {
           Improving efficiency, and reducing downtime.
         </p>
         <Flex justifyContent={"center"}>
-          <button className="butn py-2 w-50">
+          <button className="butn py-2 w-50 justify-content-center">
             <span className="butn-text px-3">Reach Us</span>
             <i className="arrow bg-light p-2 text-dark rounded-circle fa-solid fa-arrow-right"></i>
           </button>
