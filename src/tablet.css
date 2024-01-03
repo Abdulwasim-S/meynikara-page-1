@@ -1,3 +1,6 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Styles for medium screens (tablets, etc.) go here */
+    .nav-bar-img {
+            width: 230px;
+            transform: scale(1.5);
+        }
 }

@@ -2,4 +2,8 @@
     .spinner-x-text{
         font-size: 2vh;
     }
+        .nav-bar-img {
+            width: 230px;
+            transform: scale(1.5);
+        }
 }
