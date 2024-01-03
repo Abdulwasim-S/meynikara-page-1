@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsPaegArrow = () => {
   return (
-    <div className="bg-light text-dark">
+    <div className="container-fluid text-dark bg-white">
       <div className="arrow-container row p-5">
         <div className="arrow-box col-lg-3 col-md-4 col-sm-6">
           <p className="arrow-text fs-5 fw-bold">

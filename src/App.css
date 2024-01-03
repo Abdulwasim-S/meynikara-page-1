@@ -3,24 +3,24 @@
 }
 
 .link:hover {
-    border-bottom: 5px solid aquamarine;
+    border-bottom: 5px solid #00DDB5;
     transition: all ease 0.15s;
 }
 
 .text-cyan {
-    color: aquamarine;
+    color: #00DDB5;
     filter: brightness(0.90);
 }
 
 .butn {
-    border: 2px solid aquamarine;
+    border: 2px solid #00DDB5;
     border-radius: 50px;
     width: 50%;
     transition: all ease 0.5s;
 }
 
 .butn:hover {
-    background-color: aquamarine;
+    background-color: #00DDB5;
     color: black;
 }
 
@@ -50,7 +50,7 @@
     position: absolute;
     top: 5vh;
     left: 5vh;
-    border-top: 3px solid aquamarine;
+    border-top: 3px solid #00DDB5;
     rotate: -45deg;
 }
 
@@ -58,7 +58,7 @@
     position: absolute;
     top: 5vh;
     right: 5vh;
-    border-top: 3px solid aquamarine;
+    border-top: 3px solid #00DDB5;
     rotate: 45deg;
 }
 
@@ -66,7 +66,7 @@
     position: absolute;
     bottom: 5vh;
     left: 5vh;
-    border-top: 3px solid aquamarine;
+    border-top: 3px solid #00DDB5;
     rotate: 225deg;
 }
 
@@ -74,7 +74,7 @@
     position: absolute;
     bottom: 5vh;
     right: 5vh;
-    border-top: 3px solid aquamarine;
+    border-top: 3px solid #00DDB5;
     rotate: -225deg;
 }
 
@@ -114,14 +114,14 @@
     width: fit-content;
     border-radius: 50%;
     padding: 5vh;
-    border-top: 3px solid aquamarine;
-    border-right: 3px solid aquamarine;
+    border-top: 3px solid #00DDB5;
+    border-right: 3px solid #00DDB5;
     rotate: -45deg;
 }
 
 .cb-center-img {
-    border-bottom: 3px solid aquamarine;
-    border-right: 3px solid aquamarine;
+    border-bottom: 3px solid #00DDB5;
+    border-right: 3px solid #00DDB5;
     rotate: 90deg;
     padding: 3vh;
     border-radius: 50%;
@@ -135,7 +135,7 @@
 }
 
 .play-butn {
-    background-color: aquamarine;
+    background-color: #00DDB5;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -168,9 +168,9 @@
 .service-card {
     width: 300px;
     border-left: 1px solid white;
-    border-bottom: 1px solid aquamarine;
-    border-top: 1px solid aquamarine;
-    border-right: 10px solid aquamarine;
+    border-bottom: 1px solid #00DDB5;
+    border-top: 1px solid #00DDB5;
+    border-right: 10px solid #00DDB5;
     padding: 25px 40px;
     border-radius: 15%;
     transition: all ease 0.3s;
@@ -187,13 +187,13 @@
 .service-card {
     &:hover {
         border-right: 1px solid white;
-        border-bottom: 1px solid blue;
-        border-top: 1px solid blue;
-        border-left: 10px solid blue;
+        border-bottom: 1px solid #0d2cbe;
+        border-top: 1px solid #0d2cbe;
+        border-left: 10px solid #0d2cbe;
 
         /*  */
         .service-heading {
-            color: aquamarine;
+            color: #00DDB5;
             transition: 0.5s;
             transform: scale(0.8);
 
@@ -213,8 +213,8 @@
 
 .empty-span {
     padding: 0 2px;
-    background-image: linear-gradient(to bottom, aquamarine,
-            blue);
+    background-image: linear-gradient(to bottom, #00DDB5,
+            #0d2cbe);
 }
 
 @media only screen and (max-width: 600px) {
@@ -286,7 +286,7 @@
     &:hover{
         color: black;
         .text-arrow{
-                background-color: aquamarine;
+                background-color: #00DDB5;
 
             }
         .hidden-text {
@@ -299,3 +299,66 @@
     justify-content: center;
     padding: 20px;
 }
+.spinner-x-box{
+    width: fit-content;
+    min-height: 50vh;
+    position: relative;
+    
+}
+.spinner-x-num{
+    margin-top: 50px;
+    font-size: 5vw;
+    font-weight: bolder;
+        background: linear-gradient(to bottom, #00DDB5, #00DDB5, black);
+        background-clip: text;
+        color: transparent;
+}
+.spinner-x-text{
+    font-size: 1.5vw;
+    text-align: center;
+    
+}
+.spinner-x{
+    margin: 5vh;
+    border-radius: 25%;
+    padding:5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.spinner-x-border{
+    position: absolute;
+    border-top: 1vw solid #0d2cbe;
+    border-bottom: 1vw solid rgba(0, 0, 0, 0.327) ;
+    width: 90%;
+    height: 90%;
+    border-radius: 40%;
+    transition: all ease-in-out 0.7s;
+    
+}
+.spinner-x-img{
+    height: 7vh;
+}
+
+.spinner-x-box {
+
+    &:hover {
+        .spinner-x-border{transform: rotateX(180deg);}
+
+        .spinner-x-img {
+                transform: scale(1.3);
+                transition: all ease-in-out 0.5s;
+                filter: sepia(49%) saturate(5638%) hue-rotate(125deg) brightness(75%) contrast(101%);
+            }
+                .spinner-x-num {
+                        background: #00DDB5;
+                        background-clip: text;
+                        color: transparent;
+                        transform: scale(1.1);
+                        transition: all ease-in-out 0.7s;
+                }
+                
+    }
+}
+

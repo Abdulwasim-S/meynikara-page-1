@@ -1,18 +1,23 @@
 import React from "react";
 import { Image } from "react-bootstrap";
+import center_image from "./assets/mask-group-uoT.png";
+import lt_image from "./assets/mask-group-PUh.png";
+import lb_image from "./assets/mask-group-KMo.png";
+import rb_image from "./assets/mask-group-9oK.png";
+import r_image from "./assets/mask-group-e9K.png";
 
 const HomePage = () => {
   return (
     <div className="text-light row p-5">
       <div className="col-lg-7 text-page">
-        <h1 className="fw-bolder">
+        <h1 className="home-text fw-bolder">
           We build{" "}
           <span className="text-cyan">
             Data-Driven,Customer Centric XR Applications
           </span>{" "}
           to achieve your business objectives
         </h1>
-        <p className="fs-4 fw-normal">
+        <p className="home-text-para fw-normal">
           We take a consultative approach to all our clients requirement and
           carefully curate our products and solutions to fit their business
           objectives.
@@ -27,37 +32,22 @@ const HomePage = () => {
           <div className="cb-center-img">
             <Image
               className="dummy-image"
-              src="https://www.pharmaceutical-technology.com/wp-content/uploads/sites/24/2022/01/Augmented-Reality-Technology-Trends.jpg"
+              src={center_image}
               alt="dummy-image"
             />
           </div>
         </div>
         <div className="left-img">
-          <Image
-            className="dummy-image-l"
-            src="https://www.researchdive.com/blogImages/5jDlCvDgBT.jpeg"
-            alt="dummy-image"
-          />
+          <Image className="dummy-image-l" src={lt_image} alt="dummy-image" />
         </div>
         <div className="right-img">
-          <Image
-            className="dummy-image-r"
-            src="https://res.cloudinary.com/practicaldev/image/fetch/s--q8kVCBzp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://zealar.com.au/wp-content/uploads/2019/10/AR-in-Education-Industry-2.jpg"
-            alt="dummy-image"
-          />
+          <Image className="dummy-image-r" src={r_image} alt="dummy-image" />
         </div>
         <div className="b-left-img">
-          <Image
-            className="dummy-image-bl"
-            src="https://bernardmarr.com/wp-content/uploads/2023/11/The-10-Biggest-AR-VR-And-Immersive-Internet-Trends-In-2024.jpg"
-          />
+          <Image className="dummy-image-bl" src={lb_image} />
         </div>
         <div className="b-right-img">
-          <Image
-            className="dummy-image-br"
-            src="https://assets.entrepreneur.com/content/3x2/2000/1646048617-Myproject79.jpg"
-            alt="dummy-image"
-          />
+          <Image className="dummy-image-br" src={rb_image} alt="dummy-image" />
         </div>
         <button className=" play-butn position-absolute">
           <i className="arrow text-light fa-solid fa-play"></i>

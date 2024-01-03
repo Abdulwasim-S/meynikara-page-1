@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1200px) {
+    /* Styles for extra-large screens go here */
+    .navbar_link{
+        font-size: 3vh;
+    }
+    .nav-bar-img{
+        width: 25vw;
+    }
+    .home-text{
+        font-size: 3vw;
+    }
+    .home-text-para{
+        font-size: 2vw;
+    }
+}

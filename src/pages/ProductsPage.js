@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsPage = () => {
   return (
-    <div className="row bg-light mt-3 py-5">
+    <div className="row bg-white mt-3 py-5">
       <div className="col-md-8 px-5 fs-2 fw-medium mb-5">
         At Meynikara, we have developed a curated list of products that
         addresses pressing business problems that could be solved by leveraging

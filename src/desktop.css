@@ -1,0 +1,9 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large screens (desktops, etc.) go here */
+    .navbar_link {
+            font-size: 1vh;
+        }
+                .nav-bar-img {
+                    width: 50vw;
+                }
+}

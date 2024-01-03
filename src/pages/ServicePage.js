@@ -61,10 +61,10 @@ const ServicePage = () => {
         </div>
       </div>
       <div className="bg-dark text-light text-center p-3">
-        <p className="fs-1 fw-bold py-3">
+        <p className="home-text fw-bold py-3">
           Our <span className="text-cyan">Services</span>
         </p>
-        <p className="fs-5">
+        <p className="home-text-para">
           XR can improve worker training by simulating complex processes,
           Increasing safety, and reducing the risk of errors. XR can also assist
           in product design and prototyping, enhancing collaboration, and
