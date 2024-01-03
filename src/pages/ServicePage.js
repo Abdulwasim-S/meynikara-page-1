@@ -72,10 +72,12 @@ const ServicePage = () => {
           support, enabling experts to assist on-site technicians in real-time,
           Improving efficiency, and reducing downtime.
         </p>
-        <button className="butn py-2 w-50">
-          <span className="px-3 fs-3">Reach Us</span>
-          <i className="arrow bg-light p-2 text-dark rounded-circle fa-solid fa-arrow-right"></i>
-        </button>
+        <Flex justifyContent={"center"}>
+          <button className="butn py-2 w-50">
+            <span className="butn-text px-3">Reach Us</span>
+            <i className="arrow bg-light p-2 text-dark rounded-circle fa-solid fa-arrow-right"></i>
+          </button>
+        </Flex>
       </div>
     </div>
   );

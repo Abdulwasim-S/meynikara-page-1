@@ -4,7 +4,6 @@ import center_image from "./assets/mask-group-uoT.png";
 import lt_image from "./assets/mask-group-PUh.png";
 import lb_image from "./assets/mask-group-KMo.png";
 import rb_image from "./assets/mask-group-9oK.png";
-import r_image from "./assets/mask-group-e9K.png";
 
 const HomePage = () => {
   return (
@@ -22,8 +21,8 @@ const HomePage = () => {
           carefully curate our products and solutions to fit their business
           objectives.
         </p>
-        <button className="butn py-2 w-75">
-          <span className="px-3 fs-3">Learn More</span>
+        <button className="butn">
+          <span className="butn-text px-3 ">Learn More</span>
           <i className="arrow bg-light p-2 text-dark rounded-circle fa-solid fa-arrow-right"></i>
         </button>
       </div>
@@ -41,7 +40,11 @@ const HomePage = () => {
           <Image className="dummy-image-l" src={lt_image} alt="dummy-image" />
         </div>
         <div className="right-img">
-          <Image className="dummy-image-r" src={r_image} alt="dummy-image" />
+          <Image
+            className="dummy-image-r"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--q8kVCBzp--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://zealar.com.au/wp-content/uploads/2019/10/AR-in-Education-Industry-2.jpg"
+            alt="dummy-image"
+          />
         </div>
         <div className="b-left-img">
           <Image className="dummy-image-bl" src={lb_image} />
@@ -50,7 +53,7 @@ const HomePage = () => {
           <Image className="dummy-image-br" src={rb_image} alt="dummy-image" />
         </div>
         <button className=" play-butn position-absolute">
-          <i className="arrow text-light fa-solid fa-play"></i>
+          <i className="text-light fa-solid fa-play fa-2xl"></i>
         </button>
       </div>
     </div>

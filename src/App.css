@@ -13,19 +13,39 @@
 }
 
 .butn {
-    border: 2px solid #00DDB5;
-    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.4vh solid #00DDB5;
+    height: 10vh;
+    border-radius: 5vh;
     width: 50%;
+    height: 10vh;
     transition: all ease 0.5s;
+    padding: 2vh;
+}
+.butn-text {
+    font-size: 4vh;
+    font-weight: 500;
 }
 
-.butn:hover {
+.butn{
+    &:hover {
+
     background-color: #00DDB5;
     color: black;
+    .arrow {
+    filter: invert(1);
+    transition: all ease-in-out 0.5s;
+}
+}
 }
 
 .arrow {
+    font-size: 5vh;
     rotate: -45deg;
+    padding: 2vh;
+    background: white;
 }
 
 .dummy-image-l,
@@ -136,13 +156,12 @@
 
 .play-butn {
     background-color: #00DDB5;
-    height: 50px;
-    width: 50px;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
     animation-name: zoom-in-out;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    rotate: 45deg;
 }
 
 @keyframes zoom-in-out {
@@ -212,7 +231,7 @@
 }
 
 .empty-span {
-    padding: 0 2px;
+    padding: 0 0.25vw;
     background-image: linear-gradient(to bottom, #00DDB5,
             #0d2cbe);
 }
@@ -269,15 +288,19 @@
     flex-direction: column;
     align-items: start;
 }
+.arrow-text{
+    font-size: 5vh;
+}
 .text-arrow{
     background-color: lightgray;
-    padding: 15px;
+    padding: 2.5vh;
     border-radius: 50%;
     color: white;
     rotate: -45deg;
     transition: 0.5s;
 }
 .hidden-text{
+    font-size: 2.5vh;
     opacity: 0;
     transition: all ease 0.1s;
 }
