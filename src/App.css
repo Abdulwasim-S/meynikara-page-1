@@ -375,7 +375,7 @@
                 filter: sepia(49%) saturate(5638%) hue-rotate(125deg) brightness(75%) contrast(101%);
             }
                 .spinner-x-num {
-                        background: #00DDB5;
+                        background: linear-gradient(to bottom, #00DDB5, #00DDB5, #00DDB5);
                         background-clip: text;
                         color: transparent;
                         transform: scale(1.1);
